@@ -3,7 +3,7 @@
 
 List of guidelines and samples that is used at [adesso Turkey](https://www.adesso.com.tr/) when developing for the __Android__ platform.
 
-- [ ] Naming convention
+- [x] [Naming convention](naming_convention.md)
 - [ ] Coding guideline
 - [ ] Architecture guideline
 - [ ] Android Studio live templates
