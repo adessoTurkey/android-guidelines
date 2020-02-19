@@ -6,7 +6,7 @@ List of guidelines and samples that is used at [adesso Turkey](https://www.adess
 - [x] [Naming convention](naming_convention.md)
 - [ ] Coding guideline
 - [ ] Architecture guideline
-- [ ] Android Studio live templates
+- [x] [Android Studio live templates](android-studio-live-templates)
 - [ ] Boilerplate app
 
 
