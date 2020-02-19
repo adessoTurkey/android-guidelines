@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<template name="Activity" description="Creates a new mvvm activity template" format="5" minApi="7"
+    minBuildApi="14" revision="1">
+
+    <category value="Mvvm Feature" />
+    <formfactor value="Mobile" />
+
+    <parameter name="Activity Name" constraints="class|nonempty|unique" default="home"
+        help="The name of the activity class to create" id="className" type="string" />
+
+    <parameter name="Path Name to Add Activity" constraints="nonempty" default="scene"
+        help="The name of the Activity class to create" id="pathName" type="string" />
+
+    <parameter name="Activity Name Capitalized" default="home" id="classNameCap"
+        suggest="${className?cap_first}" type="string" visibility="false" />
+
+    <parameter name="Activity Name UnCapitalized" default="home" id="classNameUnCap"
+        suggest="${className?uncap_first}" type="string" visibility="false" />
+
+    <parameter name="Create layout XML" default="true" help="Generate a layout XML for the activity"
+        id="includeLayout" type="boolean" />
+
+    <parameter name="Create Dagger Module" default="true" help="Generate a dagger module for the scene"
+        id="createModule" type="boolean" />
+
+    <parameter
+        id="rootPackage"
+        name="Application package name"
+        type="string"
+        constraints="package"
+        suggest="${packageName}" />       
+
+    <parameter name="Package Name for Path" default="home" id="packagePathName"
+        suggest="${pathName?replace('/', '.')}" type="string" visibility="false" />
+
+    <parameter name="Activity Name Lowercase" default="home" id="classNameLowercase"
+        suggest="${className?lower_case}" type="string" visibility="false" />
+
+    <parameter name="Activity Layout Name" constraints="layout|nonempty|unique"
+        default="activity_blank" help="The name of the layout to create" id="activityName"
+        suggest="activity_${classToResource(className)}" type="string" visibility="false" />
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
