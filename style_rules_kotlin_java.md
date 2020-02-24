@@ -1,6 +1,6 @@
-# Kotlin / Java style rules
+## Kotlin / Java style rules
 
-## Formatting &  Line length limit
+__Formatting &  Line length limit__
 
 Code lines should not exceed __100 characters__. If the line is longer than this limit there are usually two options to reduce its length:
 
@@ -12,7 +12,7 @@ There are two __exceptions__ where it is possible to have lines longer than 100:
 * Lines that are not possible to split, e.g. long URLs in comments.
 * `package` and `import` statements.
 
-### Fully qualify imports
+### Use fully qualify imports
 
 Makes it obvious what classes are used and the code is more readable for maintainers.
 
@@ -181,7 +181,7 @@ Use regular indent (4 spaces) for constructor parameters.
 > Rationale: This ensures that properties declared in the primary constructor have the same indentation as properties
 > declared in the body of a class.
 
-### Modifiers
+### Order modifiers
 
 If a declaration has multiple modifiers, always put them in the following order:
 
