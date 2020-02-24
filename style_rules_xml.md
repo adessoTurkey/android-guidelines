@@ -2,6 +2,7 @@
 
 Inspired by [Ribot Android guideline](https://github.com/ribot/android-guidelines/blob/master/project_and_code_guidelines.md)
 
+
 ### Use self closing tags
 
 When an XML element doesn't have any contents, you __must__ use self closing tags.
