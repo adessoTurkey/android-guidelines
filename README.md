@@ -4,7 +4,8 @@
 List of guidelines and samples that is used at [adesso Turkey](https://www.adesso.com.tr/) when developing for the __Android__ platform.
 
 - [x] [Naming convention](naming_convention.md)
-- [ ] Coding guideline
+- [x] [Kotlin / Java style rules](style_rules_kotlin_java.md)
+- [x] [XML style rules](style_rules_xml.md)
 - [ ] Architecture guideline
 - [x] [Android Studio live templates](android-studio-live-templates)
 - [ ] Boilerplate app

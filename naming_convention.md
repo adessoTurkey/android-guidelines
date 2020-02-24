@@ -37,6 +37,20 @@ fun someMethod() { /*...*/ }
 
 ```
 
+## Names for backing properties
+
+If a class has two properties which are conceptually the same but one is part of a public API and another is an implementation detail, use an underscore as the prefix for the name of the private property:
+
+
+```kotlin
+class FancyClass {
+    private val _elementList = mutableListOf<Element>()
+
+    val elementList: List<Element>
+         get() = _elementList
+}
+```
+
 ## Constants
 
 Names of constants starts uppercase underscore-separated. Because many elements of Android SDK use a key-value pair approach,  names of the keys should be defined as const val with an appropriate prefixes.
@@ -170,12 +184,12 @@ String names start with a prefix that identifies the section they belong to. For
 > **\<where>\_\<what>\_\<description>** (snake_case)
 
 
-| Where            | Type      | Description              | Example				   			 |
-| :--------------- | :-------- | :------------------------| :------------------------------- |
-| common		   | `error`   | Unauthorized Access      | common_error_unauthorized_access |
-| login			   | `msg`     | Successfully Logged In   | login_msg_login_succeed 		 |
-| forgot password  | `title`   | Forgot Password          | forgot_passsword_title			 |
-| logout 		   | `action`  | Clear All  		 	  | logout_action_clear_all			 |
+| Where            | Type      | Description              | Example				   			   |
+| :--------------- | :-------- | :------------------------| :--------------------------------- |
+| common		   | `error`   | Unauthorized Access      | `common_error_unauthorized_access` |
+| login			   | `msg`     | Successfully Logged In   | `login_msg_login_succeed`		   |
+| forgot password  | `title`   | Forgot Password          | `forgot_passsword_title`	   	   |
+| logout 		   | `action`  | Clear All  		 	  | `logout_action_clear_all`		   |
 
 
 
