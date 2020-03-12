@@ -15,12 +15,12 @@ Run the install script at the root of this repository:
 
 > 1. Make given script executable 🔨
 ```shell
-    $ chmod +x ./copy-to-android-studio-templates.sh 
+    $ chmod +x ./copy_to_android_studio_templates.sh 
 ```
 
 > 2. Move templates to relevant path
 ```shell
-    $ ./copy-to-android-studio-templates.sh 
+    $ ./copy_to_android_studio_templates.sh 
 ```
 
 ![template setup](figures/template-setup.gif)
